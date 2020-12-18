@@ -1,0 +1,16 @@
+title: ootori-sho-ka
+description: html練習用です
+template:
+  repo: ootori-sho-ka-template
+  name: ootori-sho-ka
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
